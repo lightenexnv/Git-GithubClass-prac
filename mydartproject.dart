@@ -22,4 +22,10 @@ class Student {
     print('Student IO: $StudentID');
     print("-----------------------");
   }
+
+  void UpdateGrade(String newGrade) {
+    String? oldgrade = grade;
+    grade = newGrade;
+    print("The new Grade from ${oldgrade} to ${newGrade}");
+  }
 }
